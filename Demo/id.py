@@ -1,7 +1,15 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-driver = webdriver.Chrome()
+#driver = webdriver.Chrome()
+from selenium.webdriver.chrome.options import Options
+
+options = Options()
+options.add_argument("--headless=new")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+
+driver = webdriver.Chrome(options=options)
 driver.get("https://demowebshop.tricentis.com/")
 driver.maximize_window()
 print(driver.title)
