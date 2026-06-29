@@ -23,7 +23,7 @@ time.sleep(3)
 driver.find_element(By.CLASS_NAME,"search-box-text").send_keys("Computer")
 driver.find_element(By.CSS_SELECTOR,"input[value='Search']").click()
 print(driver.title)
-input("Press Enter to close browser...")
-
+#input("Press Enter to close browser...")
+driver.quit()
 
 
