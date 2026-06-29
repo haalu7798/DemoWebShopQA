@@ -22,7 +22,9 @@ jobs:
         run: |
           pip install selenium
 
+      - name: Install Google Chrome
+        uses: browser-actions/setup-chrome@v1
+
       - name: Run Selenium Script
         run: |
           python Demo/id.py
-          
