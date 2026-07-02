@@ -26,5 +26,5 @@ jobs:
         uses: browser-actions/setup-chrome@v1
 
       - name: Run Selenium Script
-        run: |
-          python Demo/id.py
+
+        run: pytest
